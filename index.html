@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="shortcut icon" href="./myfiles/icon.ico" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo">
+  
+  <meta name="description" content="">
+
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">  
+
+  
+    <meta name="theme-color" content="#003f5c">
+    
+    <script type="text/javascript" async="" src="./myfiles/analytics.js.download"></script><script type="text/javascript" async="" src="./myfiles/js"></script><script src="./myfiles/mathjax-config.js.download"></script>
+  
+    <link rel="stylesheet" href="./myfiles/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+ 
+      <link rel="stylesheet" href="./myfiles/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="all" onload="this.media=&#39;all&#39;">
+    
+        
+          <link rel="stylesheet" href="./myfiles/github.min.css" crossorigin="anonymous" title="hl-light" media="all" onload="this.media=&#39;all&#39;">
+          <link rel="stylesheet" href="./myfiles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media=&#39;all&#39;" disabled="">
+   
+    
+      <link rel="stylesheet" href="./myfiles/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="all" onload="this.media=&#39;all&#39;">
+     
+        <script src="./myfiles/tex-chtml.js.download" integrity="" crossorigin="anonymous" async=""></script>
+      <link rel="preload" as="style" href="./myfiles/css2">
+      <link rel="stylesheet" href="./myfiles/css2" media="all" onload="this.media=&#39;all&#39;">
+    
+  
+
+  <link rel="stylesheet" href="./myfiles/wowchemy.5c4def4f00a521426f4eb098155f3342.css">
+
+<script async="" src="./myfiles/js(1)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-144780600-1', { 'anonymize_ip': true });
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+  
+    <script src="./myfiles/netlify-identity-widget.js.download"></script><script src="./myfiles/noerrors.js.download" charset="UTF-8"></script><script src="./myfiles/color.js.download" charset="UTF-8"></script>
+  
+
+  
+  <meta property="twitter:card" content="summary">
+  <meta property="og:site_name" content="Aishwarya Asawa">
+  <meta property="og:url" content="https://aishwaryaasawa.github.io/">
+  <meta property="og:title" content="Aishwarya Asawa">
+  <meta property="og:description" content="">
+    
+      <meta property="og:updated_time" content="2023-07-25T00:00:00+00:00">
+
+
+    <script src="./myfiles/cookieconsent.min.js.download" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./myfiles/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#003f5c",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#003f5c"
+        }
+      },
+      "theme": "classic",
+    })});
+  </script>
+
+  <title>Aishwarya Asawa</title>
+<style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style type="text/css">.medium-zoom-overlay{position:fixed;top:0;right:0;bottom:0;left:0;opacity:0;transition:opacity .3s;will-change:opacity}.medium-zoom--opened .medium-zoom-overlay{cursor:pointer;cursor:zoom-out;opacity:1}.medium-zoom-image{cursor:pointer;cursor:zoom-in;transition:transform .3s cubic-bezier(.2,0,.2,1)!important}.medium-zoom-image--hidden{visibility:hidden}.medium-zoom-image--opened{position:relative;cursor:pointer;cursor:zoom-out;will-change:transform}</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+
+<style></style>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper vsc-initialized"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-classic cc-bottom cc-color-override-1340934796 cc-invisible" style="display: none;"><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Got it!</a></div><!--googleon: all--></div>
+
+  <script src="./myfiles/wowchemy-init.min.66d3e0fff6d32c4ece05adee927fbd96.js.download"></script>
+  <div class="page-header">
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="https://aishwaryaasawa.github.io/">Aishwarya Asawa</a>
+    </div>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="https://aishwaryaasawa.github.io/">Aishwarya Asawa</a>
+    </div>
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+      <ul class="navbar-nav d-md-inline-flex">
+        <li class="nav-item">
+          <a class="nav-link active" href="#about" data-target="#about"><span>Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#achievements" data-target="#achievements"><span>Achievements</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#certifications" data-target="#certifications"><span>Certifications</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#internships" data-target="#internships"><span>Internships</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#projects" data-target="#projects"><span>Projects</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#skills" data-target="#skills"><span>Skills</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#extrac" data-target="#extrac"><span>Extra-Curricular</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#courses" data-target="#courses"><span>Courses</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " target="_blank"  href="https://drive.google.com/file/d/1K0RV-FZcgPu3ocsoREehopPIEIsx-0ZK/view?usp=sharing"><span>Resume</span></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#contacts" data-target="#contacts"><span>Contact</span></a>
+        </li>
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+<span class="js-widget-page d-none"></span>
+ 
+  <section id="about" class="home-section wg-about  fullscreen">
+   <div class="home-section-bg "></div>
+    <div class="container">
+    
+
+<div>
+  <a class="background-img"><img id="img1" src="./myfiles/mountains.jpg"></a>
+</div>
+  
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile" >
+
+      <img class="avatar avatar-circle" src="./myfiles/Aishwarya.png" alt="">
+      
+
+      <div class="portrait-title">
+        <h2></h2>
+
+  </div>
+   &nbsp; &nbsp;
+      <ul class="network-icon" aria-hidden="true">
+        <li>
+          <a href="mailto:aishwaryaasawa09@gmail.com" target="_blank" rel="noopener" aria-label="Gmail">
+            <img src="./myfiles/icons8-gmail-96.png" alt="Gmail Icon" style="width: 32px; height: 32px">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/aishwaryaasawa/" target="_blank" rel="noopener" aria-label="LinkedIn">
+             <img src="./myfiles/icons8-linkedin-96.png" alt="Gmail Icon" style="width: 32px; height: 32px">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/aishwarya.asawa.3" target="_blank" rel="noopener" aria-label="twitter">
+            <img src="./myfiles/icons8-facebook-96.png" alt="Gmail Icon" style="width: 32px; height: 32px">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-12 col-lg-1" style="padding-top:10px;padding-bottom:10px">
+  </div>
+  <div class="col-12 col-lg-7">
+  <h2> Welcome to my Portfolio ! </h2>
+  <div class="vertical-center">
+
+    <div class="article-style">
+
+      <p style="font-size:20px; text-align:justify"> I am currently pursuing <a href="https://iitr.ac.in/Departments/Department%20of%20Design/static/MIM/MIM_Structure.pdf" target="_blank" rel="noopener">Master's in Innovation Management</a>
+      from the IIT Roorkee. I have completed M.Sc. in Mathematics from NIT Warangal. I have a passion for Analytics, Creativity, Design, and Problem-Solving. I had the incredible opportunity to be intern at Patanjali Ayurved Ltd, where I designed a comprehensive dashboard for Sales Analysis and Annual Operating Plan (AOP). During my journey of internship, I have honed my skills in data visualization, data entry, data analysis, designing and project management. I love playing chess and solve puzzles. I have expertise in management, design, mathematics, and data analytics, combining creativity and strategic thinking to drive innovative solutions.</p>
+
+      <a class="btn btn-outline-primary btn-page-header" href="#projects1" rel="noopener">Design</a>
+
+      <a class="btn btn-outline-primary btn-page-header" href="#internships" rel="noopener"> Analytics</a>
+
+      <a class="btn btn-outline-primary btn-page-header"  href="#projects" rel="noopener"> Research</a>
+
+      <a class="btn btn-outline-primary btn-page-header" href="#projects3" rel="noopener"> Mathematics</a>      
+
+      <a class="btn btn-outline-primary btn-page-header" href="https://drive.google.com/file/d/1K0RV-FZcgPu3ocsoREehopPIEIsx-0ZK/view?usp=sharing" target="_blank" rel="noopener"> Resume</a>
+
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+ <section id="achievements" class="home-section wg-achievements  " style="background-color:#F8F8F8;">
+   <div class="home-section-bg "></div>
+    <div class="container" >
+    
+      <div class="row  " >        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;">Achievements</h1>
+            
+          </div>
+        
+
+<div class="col-12 col-lg-8" >
+
+  <ul class="fa-ul" >
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span> Currently <b style="font-weight: 700;">Batch Rank 1</b> in course Master in Innovation Management, IIT Roorkee. </span>
+    </li>
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span><b style="font-weight: 700;">AIR-3</b> and <b style="font-weight: 700;">Platinum Winner</b> in Zuno Fellowship Program by Foundit.</span>
+    </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span><b style="font-weight: 700;">AIR-652</b> in Joint Admission Test for Masters (JAM Mathematics) 2019.</span>
+      </li>
+
+      <li>
+        <span><b style="font-weight: 700;">AIR-1684</b> in Graduate Aptitude Test (GATE Mathematics) 2021.</span>
+      </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span><b style="font-weight: 700;">Rank 2</b> in District Chess Championship 2012-13.</span>
+      </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Consistently in the <b style="font-weight: 700;">Top 3</b> in all 6 Semesters during B.Sc.</span>
+      </li>
+
+  </ul>
+
+</div>      </div>
+    
+    </div>
+  </section>
+
+  <section id="certifications" class="home-section wg-certifications  ">
+   <div class="home-section-bg "></div>
+    <div class="container" >
+    
+      <div class="row  " >        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;">Certifications</h1>
+            
+          </div>
+        
+
+<div class="col-12 col-lg-8" >
+
+  <ul class="fa-ul" >
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span> Earned <b style="font-weight: 700;">Google</b> Data Analytics Certification by Google on Coursera in July 2023. <a href="https://drive.google.com/file/d/1YUeOgqx1G7CzPwVl0GwWLrspe7P18zZc/view?usp=drive_link"  target="_blank">Certificate Link</a> </span>
+    </li>
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+     <span> <b style="font-weight: 700;">Elite with Gold</b> in NPTEL Course Engineering Mathematics of IIT KGP (Topper). <a href="https://drive.google.com/file/d/14pY8YJ17mFA8v3e6EKqL2qW6i1Y0raUh/view?usp=drive_link"  target="_blank">Certificate Link</a> </span>
+    </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+         <span> <b style="font-weight: 700;">Elite with Silver</b> in NPTEL Course Calculus of Several Real Variables of IIT Kanpur. <a href="https://drive.google.com/file/d/1tGJeM68dR2vY3Oae4yaT2_alik95bbrf/view?usp=drive_link"  target="_blank">Certificate Link</a> </span>
+      </li>
+
+  </ul>
+
+</div>      </div>
+    
+    </div>
+  </section>
+
+   <section id="internships" class="home-section wg-internships  " style="background-color:#F8F8F8;">
+   <div class="home-section-bg "></div>
+    <div class="container" >
+    
+      <div class="row  " >        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;">Internships</h1>
+            
+          </div>
+        
+
+<div class="col-12 col-lg-8" >
+    <h5>Patanjali Ayurved Ltd. (Patanjali Organic Research Institute) June 2023 - Aug 2023</h5>
+  <div class="row align-items-center">
+    
+    <div class="col-12 col-md-6">
+          
+      <div class="summary-style">
+  <ul class="fa-ul" >
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <p style="text-align:justify"> Designed and Created a Dashboard of Sales and AOP of Patanjali Organic Research Institute. </p>
+    </li>
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <p style="text-align:justify">Performed comprehensive analysis using data analytics techniques of extensive Sales Big Data.</p>
+    </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <p style="text-align:justify">Executed end-to-end Data Cleaning and Data Entry processes, encompassing handling missing values, eliminating duplicates, formatting data, validating accuracy, and meticulously identifying and rectifying errors.</p>
+      </li>
+
+      <li>
+        <p style="text-align:justify"><i><u>Skill set</u>: Designing, Liaising, M.S. Excel, Data cleaning, Data Analysis, Data Entry, Sales Analysis</i></p>
+      </li>
+
+  </ul>
+        </div>
+      
+    </div>
+
+
+    <div class="col-12 col-md-6 order-first ">
+      
+      
+      <a>
+        <img src="./myfiles/Patanjali_Internship.jpg" style="height:420px;width:500px" loading="lazy">
+      </a>
+      
+    </div>
+
+  </div>
+
+</div>      </div>
+    
+    </div>
+  </section>
+
+   <section id="projects" class="home-section wg-projects  ">
+   <div class="home-section-bg "></div>
+    <div class="container" >
+    
+      <div class="row  " >        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;">Projects</h1>
+          </div>
+        
+
+<div class="col-12 col-lg-8" >
+    <h5>Case Study of University of Patanjali (<i>Currently Ongoing</i>)</h5>
+  <div class="row align-items-center">
+    
+    <div class="col-12 col-md-6">
+          
+      <div class="summary-style">
+  <ul class="fa-ul" >
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <p style="text-align:justify">Interviewed with Pro-Vice Chancellor, Professors, Acharya, Students & Staff of University of Patanjali.</p>
+    </li>
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <p style="text-align:justify">Analyzed market problem and how does an organization offer a better solution at global level.</p>
+    </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <p style="text-align:justify">Explored Patanjali Research Institute, Patanjali Yogpeeth, University of Patanjali.</p>
+      </li>
+
+      <li>
+        <p style="text-align:justify"><i><u>Skill set</u>: Marketing, Communication, Decision Making, Critical Thinking, Report Making</i></p>
+      </li>
+
+
+  </ul>
+        </div>
+      
+    </div>
+
+
+    <div class="col-12 col-md-6 order-first ">
+      
+      
+      <a>
+        <img src="./myfiles/CaseStudy.jpg" style="height:250px;width:500px" loading="lazy">
+      </a>
+      
+    </div>
+
+  </div>
+
+</div>      </div>
+    
+    </div>
+  </section>
+
+   <section id="projects1" class="home-section wg-projects1  " style="background-color:#F8F8F8;">
+   <div class="home-section-bg "></div>
+    <div class="container" >
+    
+      <div class="row  " >        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;"></h1>
+          </div>
+        
+
+<div class="col-12 col-lg-8" >
+    <h5>Education: An Explorative Approach towards Informal Education Nov 2022</h5>
+  <div class="row align-items-center">
+    
+    <div class="col-12 col-md-6">
+          
+      <div class="summary-style">
+  <ul class="fa-ul" >
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <p style="text-align:justify">Identified a prevalent gap in informal education, specifically in the domain of value education for children. </p>
+    </li>
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <p style="text-align:justify"><b style="font-weight: 700;">Interviewed 30+ Rural People</b> to Understand and Empathize their Problems.</p>
+    </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <p style="text-align:justify">Developed an Innovative Solution by creating <i>Mulya: Board Game to Inculcate Values</i>, aimed at instilling essential virtues in children through an engaging and interactive gaming experience.</p>
+      </li>
+
+      <li>
+        <p style="text-align:justify"><i><u>Skill set</u>: Problem Identification, Ideation, Prototyping and Designing, Creativity, Mural, Figma</i></p>
+      </li>
+
+      <li>
+        <a href="https://drive.google.com/file/d/1nH7jpHHA7KKJmEYk2eJkVa8atEv84Su8/view?usp=drive_link">Report Link</a>
+      </li>
+
+  </ul>
+        </div>
+      
+    </div>
+
+
+    <div class="col-12 col-md-6 order-first ">
+      
+      
+      <a>
+        <img src="./myfiles/EduProj.jpg" style="height:420px;width:500px" loading="lazy">
+      </a>
+      
+    </div>
+
+  </div>
+
+</div>      </div>
+    
+    </div>
+  </section>
+
+  <section id="projects2" class="home-section wg-projects2  " >
+   <div class="home-section-bg "></div>
+    <div class="container" >
+    
+      <div class="row  " >        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;"></h1>
+          </div>
+        
+
+<div class="col-12 col-lg-8" >
+    <h5>Design Thinking: Design as a Worldmaking Agent - Transition Design Nov 2022</h5>
+  <div class="row align-items-center">
+    
+    <div class="col-12 col-md-6">
+          
+      <div class="summary-style">
+  <ul class="fa-ul" >
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <p style="text-align:justify">Optimized a Bizarre solution for Bizarre world and question of Moral Turpitude, to save Country from fraudsters from doing financial frauds. </p>
+    </li>
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <p style="text-align:justify"><b style="font-weight: 700;">Interviewed the Indian Army Major</b> to generate innovative ideas for the solution.</p>
+    </li>
+
+      <li>
+        <p style="text-align:justify"><i><u>Skill set</u>: Problem Identification, Creativity, Ideation, Critical Thinking and Strategy Making</i></p>
+      </li>
+
+      <li>
+        <a href="https://drive.google.com/file/d/1DyUViw3GWQGSqCwwTSYOs3JQW7BNjpTg/view?usp=drive_link">Report Link</a>
+      </li>
+
+  </ul>
+        </div>
+      
+    </div>
+
+
+    <div class="col-12 col-md-6 order-first ">
+      
+      
+      <a>
+        <img src="./myfiles/Proj2.jpg" style="height:320px;width:500px" loading="lazy">
+      </a>
+      
+    </div>
+
+  </div>
+
+</div>      </div>
+    
+    </div>
+  </section>
+
+  <section id="projects3" class="home-section wg-projects3  " style="background-color:#F8F8F8;">
+   <div class="home-section-bg "></div>
+    <div class="container" >
+    
+      <div class="row  " >        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;"></h1>
+          </div>
+        
+
+<div class="col-12 col-lg-8" >
+    <h5>Numerical solution of fifth order boundary value Problems May 2021</h5>
+  <div class="row align-items-center">
+    
+    <div class="col-12 col-md-6">
+          
+      <div class="summary-style">
+  <ul class="fa-ul" >
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <p style="text-align:justify"> Used Petrov-Galerkin method with cubic B-splines as Basis functions and Quintic B-splines as Weight function. </p>
+    </li>
+
+      <li>
+        <p style="text-align:justify"><i><u>Skill set</u>: Fortran, LaTeX</i></p>
+      </li>
+
+  </ul>
+        </div>
+      
+    </div>
+
+
+    <div class="col-12 col-md-6 order-first ">
+      
+      
+      <a>
+        <img src="./myfiles/Math.jpg" style="height:200px;width:430px" loading="lazy">
+      </a>
+      
+    </div>
+
+  </div>
+
+</div>      </div>
+    
+    </div>
+  </section>
+  
+    
+  
+  <section id="skills" class="home-section wg-skills  ">
+   <div class="home-section-bg "></div>
+    <div class="container" >
+    
+      <div class="row  " >        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;">Skills</h1>
+            
+          </div>
+        
+
+<div class="col-12 col-lg-8" >
+
+  Python, MySQL, Microsoft Office (M.S.Word, M.S. PowerPoint, M.S. Excel), LaTeX, Data Cleaning, Data Analysis, Data Visualization, Data Entry, Problem-Solving, Analysis and Summarization, Communication, Critical Thinking, Optimization, Leadership
+
+
+</div>      </div>
+    
+    </div>
+  </section>
+
+
+ <section id="extrac" class="home-section wg-extrac  " style="background-color:#F8F8F8;">
+   <div class="home-section-bg "></div>
+    <div class="container" >
+    
+      <div class="row  " >        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;">Extra-Curricular</h1>
+            
+          </div>
+        
+
+<div class="col-12 col-lg-8" >
+
+  <ul class="fa-ul" >
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span> Active <b style="font-weight: 700;">Class Representative</b> of Master in Innovation Management at IIT Roorkee. </span>
+    </li>
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span><b style="font-weight: 700;">Student Coordinator</b> for 2 days Workshop on Insights on Innovation: Success Stories at IIT Roorkee.</span>
+    </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Active Chess Club Member at IIT Roorkee Chess Club.</span>
+      </li>
+
+      <li>
+        <span>Hosted an Event for J.M.Patel College, accredited with ‘A’ grade by National Assessment and Accreditation Council.</span>
+      </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Responsible for Game Management and Anchoring during the Farewell event of 200+ students.</span>
+      </li>
+  </ul>
+
+</div>      </div>
+    
+    </div>
+  </section>
+
+
+
+
+ <section id="courses" class="home-section wg-courses  ">
+   <div class="home-section-bg "></div>
+    <div class="container" >
+    
+      <div class="row  " >        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;">Courses Taken</h1>
+            
+          </div>
+        
+
+<div class="col-12 col-lg-8" >
+
+  <ul class="fa-ul" >
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span>Business Decision Making (Course Topper) </span>
+    </li>
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span>Contemporary Management Practices (Course Topper)</span>
+    </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Innovative Entrepreneurship Strategies (Course Topper)</span>
+      </li>
+
+      <li>
+        <span>Legal Aspects of Business (Course Topper)</span>
+      </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Financing and Marketing of Innovation (Course Topper)</span>
+      </li>
+        <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Technology Management (Course Topper)</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Intellectual Property Management (Course Topper)</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Design Thinking</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Effective Communication Skills</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Business Valuation</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Product Innovation Management</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Process Innovation Management</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Contemporary Strategic Management</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Intellectual Property Management</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Innovative Services and Business Models</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Operation Research∗</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Mathematical Modelling∗</span>
+      </li><li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Linear Algebra∗</span>
+        </li>
+  </ul>
+  ∗Done during M.Sc. in Mathematics
+
+</div>      </div>
+    
+    </div>
+  </section>
+
+
+  <section id="contacts" class="home-section wg-contacts  " style="background-color:#F8F8F8;">
+   <div class="home-section-bg "></div>
+    <div class="container">
+    
+      <div class="row  ">        
+          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0" style="font-size: 46px;">Contact</h1>
+            
+          </div>
+        
+
+<div class="col-12 col-lg-8">
+
+  <ul class="fa-ul">
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span>Connect with me on <a href="https://www.linkedin.com/in/aishwaryaasawa/"  target="_blank">LinkedIn</a> </span>
+    </li>
+
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span>E-Mail: <a href="mailto:aishwaryaasawa09@gmail.com">aishwaryaasawa09@gmail.com</a></span>
+    </li>
+
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span >Address: Himadri Bhawan, Indian Institute of Technology Roorkee is a technical university located in Roorkee, Uttarakhand, India, Pin Code: 247667</span>
+      </li>
+  </ul>
+
+</div>      </div>
+    
+    </div>
+  </section>
+
+
+  </div>
+
+
+      <script src="./myfiles/jquery.min.js.download" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="./myfiles/instantpage.min.js.download" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+        <script src="./myfiles/imagesloaded.pkgd.min.js.download" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="./myfiles/isotope.pkgd.min.js.download" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+
+        <script src="./myfiles/jquery.fancybox.min.js.download" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="./myfiles/mermaid.min.js.download" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+  
+        <script src="./myfiles/highlight.min.js.download" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="./myfiles/r.min.js.download"></script>
+        
+        <script src="./myfiles/python.min.js.download"></script>
+        
+        <script src="./myfiles/julia.min.js.download"></script>
+      <script src="./myfiles/leaflet.min.js.download" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+        <script src="./myfiles/fuse.min.js.download" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="./myfiles/jquery.mark.min.js.download" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+
+    <script src="./myfiles/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js.download"></script>
+    
+    <script src="./myfiles/wowchemy.min.4ea9cc8d09c5c158656ac1a804743b34.js.download"></script>
+    
+  <script async="" defer="" src="./myfiles/buttons.js.download"></script>
+
+
+<iframe id="netlify-identity-widget" title="Netlify identity widget" style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; " src="./myfiles/saved_resource.html"></iframe></body></html>
