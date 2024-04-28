@@ -1,873 +1,633 @@
 <!DOCTYPE html>
-<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <link rel="shortcut icon" href="./myfiles/icon.ico" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="generator" content="Wowchemy 5.1.0 for Hugo">
-  
-  <meta name="description" content="">
-
-  
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""> 
-
-
-
-  
-    <meta name="theme-color" content="#003f5c">
-    
-    <script type="text/javascript" async="" src="./myfiles/analytics.js.download"></script><script type="text/javascript" async="" src="./myfiles/js"></script><script src="./myfiles/mathjax-config.js.download"></script>
-  
-    <link rel="stylesheet" href="./myfiles/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
- 
+<html lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="shortcut icon" href="./myfiles/icon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="generator" content="Wowchemy 5.1.0 for Hugo">
+      <meta name="description" content="">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+      <meta name="theme-color" content="#003f5c">
+      <script type="text/javascript" async="" src="./myfiles/analytics.js.download"></script><script type="text/javascript" async="" src="./myfiles/js"></script><script src="./myfiles/mathjax-config.js.download"></script>
+      <link rel="stylesheet" href="./myfiles/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
       <link rel="stylesheet" href="./myfiles/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="all" onload="this.media=&#39;all&#39;">
-    
-        
-          <link rel="stylesheet" href="./myfiles/github.min.css" crossorigin="anonymous" title="hl-light" media="all" onload="this.media=&#39;all&#39;">
-          <link rel="stylesheet" href="./myfiles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media=&#39;all&#39;" disabled="">
-   
-    
+      <link rel="stylesheet" href="./myfiles/github.min.css" crossorigin="anonymous" title="hl-light" media="all" onload="this.media=&#39;all&#39;">
+      <link rel="stylesheet" href="./myfiles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media=&#39;all&#39;" disabled="">
       <link rel="stylesheet" href="./myfiles/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="all" onload="this.media=&#39;all&#39;">
-     
-        <script src="./myfiles/tex-chtml.js.download" integrity="" crossorigin="anonymous" async=""></script>
+      <script src="./myfiles/tex-chtml.js.download" integrity="" crossorigin="anonymous" async=""></script>
       <link rel="preload" as="style" href="./myfiles/css2">
       <link rel="stylesheet" href="./myfiles/css2" media="all" onload="this.media=&#39;all&#39;">
-    
-  
-
-  <link rel="stylesheet" href="./myfiles/wowchemy.5c4def4f00a521426f4eb098155f3342.css">
-
-<script async="" src="./myfiles/js(1)"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
+      <link rel="stylesheet" href="./myfiles/wowchemy.5c4def4f00a521426f4eb098155f3342.css">
+      <script async="" src="./myfiles/js(1)"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         
+         function gtag() {
+             dataLayer.push(arguments);
          }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-144780600-1', { 'anonymize_ip': true });
-  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-  
-    <script src="./myfiles/netlify-identity-widget.js.download"></script><script src="./myfiles/noerrors.js.download" charset="UTF-8"></script><script src="./myfiles/color.js.download" charset="UTF-8"></script>
-  
-
-  
-  <meta property="twitter:card" content="summary">
-  <meta property="og:site_name" content="Aishwarya Asawa">
-  <meta property="og:url" content="https://aishwaryaasawa.github.io/">
-  <meta property="og:title" content="Aishwarya Asawa">
-  <meta property="og:description" content="">
-    
+         
+         function trackOutboundLink(url, target) {
+           gtag('event', 'click', {
+                'event_category': 'outbound',
+                'event_label': url,
+                'transport_type': 'beacon',
+                'event_callback': function () {
+                  if (target !== '_blank') {
+                    document.location = url;
+                  }
+                }
+           });
+           console.debug("Outbound link clicked: " + url);
+         }
+         
+         function onClickCallback(event) {
+           if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+             return;
+           }
+           trackOutboundLink(event.target, event.target.getAttribute('target'));  
+         }
+         
+         gtag('js', new Date());
+         gtag('config', 'UA-144780600-1', { 'anonymize_ip': true });
+         gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+         
+         
+         document.addEventListener('click', onClickCallback, false);
+      </script>
+      <script src="./myfiles/netlify-identity-widget.js.download"></script><script src="./myfiles/noerrors.js.download" charset="UTF-8"></script><script src="./myfiles/color.js.download" charset="UTF-8"></script>
+      <meta property="twitter:card" content="summary">
+      <meta property="og:site_name" content="Aishwarya Asawa">
+      <meta property="og:url" content="https://aishwaryaasawa.github.io/">
+      <meta property="og:title" content="Aishwarya Asawa">
+      <meta property="og:description" content="">
       <meta property="og:updated_time" content="2023-07-25T00:00:00+00:00">
-
-
-    <script src="./myfiles/cookieconsent.min.js.download" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./myfiles/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
-  
-  <script>
-  window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#003f5c",
-          "text": "rgb(255, 255, 255)"
-        },
-        "button": {
-          "background": "rgb(255, 255, 255)",
-          "text": "#003f5c"
-        }
-      },
-      "theme": "classic",
-    })});
-  </script>
-
-  <title>Aishwarya Asawa</title>
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper vsc-initialized">
-  <script src="./myfiles/wowchemy-init.min.66d3e0fff6d32c4ece05adee927fbd96.js.download"></script>
-  <div class="page-header">
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container-xl">
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="https://aishwaryaasawa.github.io/">Aishwarya Asawa</a>
-    </div>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="https://aishwaryaasawa.github.io/">Aishwarya Asawa</a>
-    </div>
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
-      <ul class="navbar-nav d-md-inline-flex">
-        <li class="nav-item">
-          <a class="nav-link active" href="#about" data-target="#about"><span>Home</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#achievements" data-target="#achievements"><span>Achievements</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="#certifications" data-target="#certifications"><span>Certifications</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="#internships" data-target="#internships"><span>Internships</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="#projects" data-target="#projects"><span>Projects</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="#skills" data-target="#skills"><span>Skills</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="#extrac" data-target="#extrac"><span>Extra-Curricular</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="#courses" data-target="#courses"><span>Courses</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " target="_blank"  href="https://drive.google.com/file/d/1K0RV-FZcgPu3ocsoREehopPIEIsx-0ZK/view?usp=sharing"><span>Resume</span></a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="#contacts" data-target="#contacts"><span>Contact</span></a>
-        </li>
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-      
-
-    </ul>
-
-  </div>
-</nav>
-
-
-  </div>
-
-  <div class="page-body">
-    
-
-<span class="js-widget-page d-none"></span>
- 
-  <section id="about" class="home-section wg-about  fullscreen">
-   <div class="home-section-bg "></div>
-    <div class="container">
-    
-
-<div>
-  <a class="background-img"><img id="img1" src="./myfiles/mountains.jpg"></a>
-</div>
-  
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile" >
-
-      <img class="avatar avatar-circle" src="./myfiles/Aishwarya.png" alt="">
-      
-
-      <div class="portrait-title">
-        <h2></h2>
-
-  </div>
-   &nbsp; &nbsp;
-      <ul class="network-icon" aria-hidden="true">
-        <li>
-          <a href="mailto:aishwaryaasawa09@gmail.com" target="_blank" rel="noopener" aria-label="Gmail">
-            <img src="./myfiles/icons8-gmail-96.png" alt="Gmail Icon" style="width: 32px; height: 32px">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/aishwaryaasawa/" target="_blank" rel="noopener" aria-label="LinkedIn">
-             <img src="./myfiles/icons8-linkedin-96.png" alt="Gmail Icon" style="width: 32px; height: 32px">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/aishwarya.asawa.3" target="_blank" rel="noopener" aria-label="twitter">
-            <img src="./myfiles/icons8-facebook-96.png" alt="Gmail Icon" style="width: 32px; height: 32px">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="col-12 col-lg-1" style="padding-top:10px;padding-bottom:10px">
-  </div>
-  <div class="col-12 col-lg-7">
-  <h2> Welcome to my Portfolio ! </h2>
-  <div class="vertical-center">
-
-    <div class="article-style">
-
-      <p style="font-size:20px; text-align:justify"> I am currently pursuing <a href="https://iitr.ac.in/Departments/Department%20of%20Design/static/MIM/MIM_Structure.pdf" target="_blank" rel="noopener">Master's in Innovation Management</a>
-      from the IIT Roorkee. I have completed M.Sc. in Mathematics from NIT Warangal. I have a passion for Analytics, Creativity, Design, and Problem-Solving. I had the incredible opportunity to be intern at Patanjali Ayurved Ltd, where I designed a comprehensive dashboard for Sales Analysis and Annual Operating Plan (AOP). During my journey of internship, I have honed my skills in data visualization, data entry, data analysis, designing and project management. I love playing chess and solve puzzles. I have expertise in management, design, mathematics, and data analytics, combining creativity and strategic thinking to drive innovative solutions.</p>
-
-      <a class="btn btn-outline-primary btn-page-header" href="#projects1" rel="noopener">Design</a>
-
-      <a class="btn btn-outline-primary btn-page-header" href="#internships" rel="noopener"> Analytics</a>
-
-      <a class="btn btn-outline-primary btn-page-header"  href="#projects" rel="noopener"> Research</a>
-
-      <a class="btn btn-outline-primary btn-page-header" href="#projects3" rel="noopener"> Mathematics</a>      
-
-      <a class="btn btn-outline-primary btn-page-header" href="https://drive.google.com/file/d/1K0RV-FZcgPu3ocsoREehopPIEIsx-0ZK/view?usp=sharing" target="_blank" rel="noopener"> Resume</a>
-
-    </div>
-    <div class="row">
-
-    </div>
-  </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-
- <section id="achievements" class="home-section wg-achievements  " style="background-color:#F8F8F8;">
-   <div class="home-section-bg "></div>
-    <div class="container" >
-    
-      <div class="row  " >        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;">Achievements</h1>
-            
-          </div>
-        
-
-<div class="col-12 col-lg-8" >
-
-  <ul class="fa-ul" >
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <span> Currently <b style="font-weight: 700;">Batch Rank 1</b> in course Master in Innovation Management, IIT Roorkee. </span>
-    </li>
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <span><b style="font-weight: 700;">AIR-3</b> and <b style="font-weight: 700;">Platinum Winner</b> in Zuno Fellowship Program by Foundit.</span>
-    </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <span><b style="font-weight: 700;">AIR-652</b> in Joint Admission Test for Masters (JAM Mathematics) 2019.</span>
-      </li>
-
-      <li>
-        <span><b style="font-weight: 700;">AIR-1684</b> in Graduate Aptitude Test (GATE Mathematics) 2021.</span>
-      </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <span><b style="font-weight: 700;">Rank 2</b> in District Chess Championship 2012-13.</span>
-      </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <span>Consistently in the <b style="font-weight: 700;">Top 3</b> in all 6 Semesters during B.Sc.</span>
-      </li>
-
-  </ul>
-
-</div>      </div>
-    
-    </div>
-  </section>
-
-  <section id="certifications" class="home-section wg-certifications  ">
-   <div class="home-section-bg "></div>
-    <div class="container" >
-    
-      <div class="row  " >        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;">Certifications</h1>
-            
-          </div>
-        
-
-<div class="col-12 col-lg-8" >
-
-  <ul class="fa-ul" >
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <span> Earned <b style="font-weight: 700;">Google</b> Data Analytics Certification by Google on Coursera in July 2023. <a href="https://drive.google.com/file/d/1YUeOgqx1G7CzPwVl0GwWLrspe7P18zZc/view?usp=drive_link"  target="_blank">Certificate Link</a> </span>
-    </li>
-
-    <li>
-      <i  aria-hidden="true"></i>
-     <span> <b style="font-weight: 700;">Elite with Gold</b> in NPTEL Course Engineering Mathematics of IIT KGP (Topper). <a href="https://drive.google.com/file/d/14pY8YJ17mFA8v3e6EKqL2qW6i1Y0raUh/view?usp=drive_link"  target="_blank">Certificate Link</a> </span>
-    </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-         <span> <b style="font-weight: 700;">Elite with Silver</b> in NPTEL Course Calculus of Several Real Variables of IIT Kanpur. <a href="https://drive.google.com/file/d/1tGJeM68dR2vY3Oae4yaT2_alik95bbrf/view?usp=drive_link"  target="_blank">Certificate Link</a> </span>
-      </li>
-
-  </ul>
-
-</div>      </div>
-    
-    </div>
-  </section>
-
-   <section id="internships" class="home-section wg-internships  " style="background-color:#F8F8F8;">
-   <div class="home-section-bg "></div>
-    <div class="container" >
-    
-      <div class="row  " >        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;">Internships</h1>
-            
-          </div>
-        
-
-<div class="col-12 col-lg-8" >
-    <h5>Patanjali Ayurved Ltd. (Patanjali Organic Research Institute) June 2023 - Aug 2023</h5>
-  <div class="row align-items-center">
-    
-    <div class="col-12 col-md-6">
-          
-      <div class="summary-style">
-  <ul class="fa-ul" >
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <p style="text-align:justify"> Designed and Created a Dashboard of Sales and AOP of Patanjali Organic Research Institute. </p>
-    </li>
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <p style="text-align:justify">Performed comprehensive analysis using data analytics techniques of extensive Sales Big Data.</p>
-    </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <p style="text-align:justify">Executed end-to-end Data Cleaning and Data Entry processes, encompassing handling missing values, eliminating duplicates, formatting data, validating accuracy, and meticulously identifying and rectifying errors.</p>
-      </li>
-
-      <li>
-        <p style="text-align:justify"><i><u>Skill set</u>: Designing, Liaising, M.S. Excel, Data cleaning, Data Analysis, Data Entry, Sales Analysis</i></p>
-      </li>
-
-  </ul>
-        </div>
-      
-    </div>
-
-
-    <div class="col-12 col-md-6 order-first ">
-      
-      
-      <a>
-        <img src="./myfiles/Patanjali_Internship.jpg" style="height:420px;width:500px" loading="lazy">
-      </a>
-      
-    </div>
-
-  </div>
-
-</div>      </div>
-    
-    </div>
-  </section>
-
-   <section id="projects" class="home-section wg-projects  ">
-   <div class="home-section-bg "></div>
-    <div class="container" >
-    
-      <div class="row  " >        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;">Projects</h1>
-          </div>
-        
-
-<div class="col-12 col-lg-8" >
-    <h5>Case Study of University of Patanjali (<i>Currently Ongoing</i>)</h5>
-  <div class="row align-items-center">
-    
-    <div class="col-12 col-md-6">
-          
-      <div class="summary-style">
-  <ul class="fa-ul" >
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <p style="text-align:justify">Interviewed with Pro-Vice Chancellor, Professors, Acharya, Students & Staff of University of Patanjali.</p>
-    </li>
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <p style="text-align:justify">Analyzed market problem and how does an organization offer a better solution at global level.</p>
-    </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <p style="text-align:justify">Explored Patanjali Research Institute, Patanjali Yogpeeth, University of Patanjali.</p>
-      </li>
-
-      <li>
-        <p style="text-align:justify"><i><u>Skill set</u>: Marketing, Communication, Decision Making, Critical Thinking, Report Making</i></p>
-      </li>
-
-
-  </ul>
-        </div>
-      
-    </div>
-
-
-    <div class="col-12 col-md-6 order-first ">
-      
-      
-      <a>
-        <img src="./myfiles/CaseStudy.jpg" style="height:250px;width:500px" loading="lazy">
-      </a>
-      
-    </div>
-
-  </div>
-
-</div>      </div>
-    
-    </div>
-  </section>
-
-   <section id="projects1" class="home-section wg-projects1  " style="background-color:#F8F8F8;">
-   <div class="home-section-bg "></div>
-    <div class="container" >
-    
-      <div class="row  " >        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;"></h1>
-          </div>
-        
-
-<div class="col-12 col-lg-8" >
-    <h5>Education: An Explorative Approach towards Informal Education Nov 2022</h5>
-  <div class="row align-items-center">
-    
-    <div class="col-12 col-md-6">
-          
-      <div class="summary-style">
-  <ul class="fa-ul" >
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <p style="text-align:justify">Identified a prevalent gap in informal education, specifically in the domain of value education for children. </p>
-    </li>
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <p style="text-align:justify"><b style="font-weight: 700;">Interviewed 30+ Rural People</b> to Understand and Empathize their Problems.</p>
-    </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <p style="text-align:justify">Developed an Innovative Solution by creating <i>Mulya: Board Game to Inculcate Values</i>, aimed at instilling essential virtues in children through an engaging and interactive gaming experience.</p>
-      </li>
-
-      <li>
-        <p style="text-align:justify"><i><u>Skill set</u>: Problem Identification, Ideation, Prototyping and Designing, Creativity, Mural, Figma</i></p>
-      </li>
-
-      <li>
-        <a href="https://drive.google.com/file/d/1nH7jpHHA7KKJmEYk2eJkVa8atEv84Su8/view?usp=drive_link">Report Link</a>
-      </li>
-
-  </ul>
-        </div>
-      
-    </div>
-
-
-    <div class="col-12 col-md-6 order-first ">
-      
-      
-      <a>
-        <img src="./myfiles/EduProj.jpg" style="height:420px;width:500px" loading="lazy">
-      </a>
-      
-    </div>
-
-  </div>
-
-</div>      </div>
-    
-    </div>
-  </section>
-
-  <section id="projects2" class="home-section wg-projects2  " >
-   <div class="home-section-bg "></div>
-    <div class="container" >
-    
-      <div class="row  " >        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;"></h1>
-          </div>
-        
-
-<div class="col-12 col-lg-8" >
-    <h5>Design Thinking: Design as a Worldmaking Agent - Transition Design Nov 2022</h5>
-  <div class="row align-items-center">
-    
-    <div class="col-12 col-md-6">
-          
-      <div class="summary-style">
-  <ul class="fa-ul" >
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <p style="text-align:justify">Optimized a Bizarre solution for Bizarre world and question of Moral Turpitude, to save Country from fraudsters from doing financial frauds. </p>
-    </li>
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <p style="text-align:justify"><b style="font-weight: 700;">Interviewed the Indian Army Major</b> to generate innovative ideas for the solution.</p>
-    </li>
-
-      <li>
-        <p style="text-align:justify"><i><u>Skill set</u>: Problem Identification, Creativity, Ideation, Critical Thinking and Strategy Making</i></p>
-      </li>
-
-      <li>
-        <a href="https://drive.google.com/file/d/1DyUViw3GWQGSqCwwTSYOs3JQW7BNjpTg/view?usp=drive_link">Report Link</a>
-      </li>
-
-  </ul>
-        </div>
-      
-    </div>
-
-
-    <div class="col-12 col-md-6 order-first ">
-      
-      
-      <a>
-        <img src="./myfiles/Proj2.jpg" style="height:320px;width:500px" loading="lazy">
-      </a>
-      
-    </div>
-
-  </div>
-
-</div>      </div>
-    
-    </div>
-  </section>
-
-  <section id="projects3" class="home-section wg-projects3  " style="background-color:#F8F8F8;">
-   <div class="home-section-bg "></div>
-    <div class="container" >
-    
-      <div class="row  " >        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;"></h1>
-          </div>
-        
-
-<div class="col-12 col-lg-8" >
-    <h5>Numerical solution of fifth order boundary value Problems May 2021</h5>
-  <div class="row align-items-center">
-    
-    <div class="col-12 col-md-6">
-          
-      <div class="summary-style">
-  <ul class="fa-ul" >
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <p style="text-align:justify"> Used Petrov-Galerkin method with cubic B-splines as Basis functions and Quintic B-splines as Weight function. </p>
-    </li>
-
-      <li>
-        <p style="text-align:justify"><i><u>Skill set</u>: Fortran, LaTeX</i></p>
-      </li>
-
-  </ul>
-        </div>
-      
-    </div>
-
-
-    <div class="col-12 col-md-6 order-first ">
-      
-      
-      <a>
-        <img src="./myfiles/Math.jpg" style="height:200px;width:430px" loading="lazy">
-      </a>
-      
-    </div>
-
-  </div>
-
-</div>      </div>
-    
-    </div>
-  </section>
-  
-    
-  
-  <section id="skills" class="home-section wg-skills  ">
-   <div class="home-section-bg "></div>
-    <div class="container" >
-    
-      <div class="row  " >        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;">Skills</h1>
-            
-          </div>
-        
-
-<div class="col-12 col-lg-8" >
-
-  Python, MySQL, Microsoft Office (M.S.Word, M.S. PowerPoint, M.S. Excel), LaTeX, Data Cleaning, Data Analysis, Data Visualization, Data Entry, Problem-Solving, Analysis and Summarization, Communication, Critical Thinking, Optimization, Leadership
-
-
-</div>      </div>
-    
-    </div>
-  </section>
-
-
- <section id="extrac" class="home-section wg-extrac  " style="background-color:#F8F8F8;">
-   <div class="home-section-bg "></div>
-    <div class="container" >
-    
-      <div class="row  " >        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;">Extra-Curricular</h1>
-            
-          </div>
-        
-
-<div class="col-12 col-lg-8" >
-
-  <ul class="fa-ul" >
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <span> Active <b style="font-weight: 700;">Class Representative</b> of Master in Innovation Management at IIT Roorkee. </span>
-    </li>
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <span><b style="font-weight: 700;">Student Coordinator</b> for 2 days Workshop on Insights on Innovation: Success Stories at IIT Roorkee.</span>
-    </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <span>Active Chess Club Member at IIT Roorkee Chess Club.</span>
-      </li>
-
-      <li>
-        <span>Hosted an Event for J.M.Patel College, accredited with ‘A’ grade by National Assessment and Accreditation Council.</span>
-      </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <span>Responsible for Game Management and Anchoring during the Farewell event of 200+ students.</span>
-      </li>
-  </ul>
-
-</div>      </div>
-    
-    </div>
-  </section>
-
-
-
-
- <section id="courses" class="home-section wg-courses  ">
-   <div class="home-section-bg "></div>
-    <div class="container" >
-    
-      <div class="row  " >        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;">Courses Taken</h1>
-            
-          </div>
-        
-
-<div class="col-12 col-lg-8" >
-
-  <ul class="fa-ul" >
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <span>Business Decision Making (Course Topper) </span>
-    </li>
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <span>Contemporary Management Practices (Course Topper)</span>
-    </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <span>Innovative Entrepreneurship Strategies (Course Topper)</span>
-      </li>
-
-      <li>
-        <span>Legal Aspects of Business (Course Topper)</span>
-      </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <span>Financing and Marketing of Innovation (Course Topper)</span>
-      </li>
-        <li>
-        <i  aria-hidden="true"></i>
-        <span>Technology Management (Course Topper)</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Intellectual Property Management (Course Topper)</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Design Thinking</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Effective Communication Skills</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Business Valuation</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Product Innovation Management</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Process Innovation Management</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Contemporary Strategic Management</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Intellectual Property Management</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Innovative Services and Business Models</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Operation Research∗</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Mathematical Modelling∗</span>
-      </li><li>
-        <i  aria-hidden="true"></i>
-        <span>Linear Algebra∗</span>
-        </li>
-  </ul>
-  ∗Done during M.Sc. in Mathematics
-
-</div>      </div>
-    
-    </div>
-  </section>
-
-
-  <section id="contacts" class="home-section wg-contacts  " style="background-color:#F8F8F8;">
-   <div class="home-section-bg "></div>
-    <div class="container">
-    
-      <div class="row  ">        
-          <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0" style="font-size: 46px;">Contact</h1>
-            
-          </div>
-        
-
-<div class="col-12 col-lg-8">
-
-  <ul class="fa-ul">
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <span>Connect with me on <a href="https://www.linkedin.com/in/aishwaryaasawa/"  target="_blank">LinkedIn</a> </span>
-    </li>
-
-    <li>
-      <i  aria-hidden="true"></i>
-      <span>E-Mail: <a href="mailto:aishwaryaasawa09@gmail.com">aishwaryaasawa09@gmail.com</a></span>
-    </li>
-
-      <li>
-        <i  aria-hidden="true"></i>
-        <span >Address: Himadri Bhawan, Indian Institute of Technology Roorkee is a technical university located in Roorkee, Uttarakhand, India, Pin Code: 247667</span>
-      </li>
-  </ul>
-
-</div>      </div>
-    
-    </div>
-  </section>
-
-
-  </div>
-
-
+      <script src="./myfiles/cookieconsent.min.js.download" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./myfiles/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+      <script>
+         window.addEventListener("load", function(){
+           window.cookieconsent.initialise({
+             "palette": {
+               "popup": {
+                 "background": "#003f5c",
+                 "text": "rgb(255, 255, 255)"
+               },
+               "button": {
+                 "background": "rgb(255, 255, 255)",
+                 "text": "#003f5c"
+               }
+             },
+             "theme": "classic",
+           })});
+      </script>
+      <title>Aishwarya Asawa</title>
+   <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper vsc-initialized">
+      <script src="./myfiles/wowchemy-init.min.66d3e0fff6d32c4ece05adee927fbd96.js.download"></script>
+      <div class="page-header">
+         <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+            <div class="container-xl">
+               <div class="d-none d-lg-inline-flex">
+                  <a class="navbar-brand" href="https://aishwaryaasawa.github.io/">Aishwarya Asawa</a>
+               </div>
+               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+               <span><i class="fas fa-bars"></i></span>
+               </button>
+               <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                  <a class="navbar-brand" href="https://aishwaryaasawa.github.io/">Aishwarya Asawa</a>
+               </div>
+               <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+                  <ul class="navbar-nav d-md-inline-flex">
+                     <li class="nav-item">
+                        <a class="nav-link active" href="#about" data-target="#about"><span>Home</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="#achievements" data-target="#achievements"><span>Achievements</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="#certifications" data-target="#certifications"><span>Certifications</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="#internships" data-target="#internships"><span>Internships</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="#projects" data-target="#projects"><span>Projects</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="#skills" data-target="#skills"><span>Skills</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="#extrac" data-target="#extrac"><span>Extra-Curricular</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="#courses" data-target="#courses"><span>Courses</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " target="_blank"  href="https://drive.google.com/file/d/1K0RV-FZcgPu3ocsoREehopPIEIsx-0ZK/view?usp=sharing"><span>Resume</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#contacts" data-target="#contacts"><span>Contact</span></a>
+                     </li>
+                  </ul>
+               </div>
+               <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <div class="page-body">
+         <span class="js-widget-page d-none"></span>
+         <section id="about" class="home-section wg-about  fullscreen">
+            <div class="home-section-bg "></div>
+            <div class="container">
+               <div>
+                  <a class="background-img"><img id="img1" src="./myfiles/mountains.jpg"></a>
+               </div>
+               <div class="row">
+                  <div class="col-12 col-lg-4">
+                     <div id="profile" >
+                        <img class="avatar avatar-circle" src="./myfiles/Aishwarya.png" alt="">
+                        <div class="portrait-title">
+                           <h2></h2>
+                        </div>
+                        &nbsp; &nbsp;
+                        <ul class="network-icon" aria-hidden="true">
+                           <li>
+                              <a href="mailto:aishwaryaasawa09@gmail.com" target="_blank" rel="noopener" aria-label="Gmail">
+                              <img src="./myfiles/icons8-gmail-96.png" alt="Gmail Icon" style="width: 32px; height: 32px">
+                              </a>
+                           </li>
+                           <li>
+                              <a href="https://www.linkedin.com/in/aishwaryaasawa/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                              <img src="./myfiles/icons8-linkedin-96.png" alt="Gmail Icon" style="width: 32px; height: 32px">
+                              </a>
+                           </li>
+                           <li>
+                              <a href="https://www.facebook.com/aishwarya.asawa.3" target="_blank" rel="noopener" aria-label="twitter">
+                              <img src="./myfiles/icons8-facebook-96.png" alt="Gmail Icon" style="width: 32px; height: 32px">
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-1" style="padding-top:10px;padding-bottom:10px">
+                  </div>
+                  <div class="col-12 col-lg-7">
+                     <h2> Welcome to my Portfolio ! </h2>
+                     <div class="vertical-center">
+                        <div class="article-style">
+                           <p style="font-size:20px; text-align:justify"> I am currently pursuing <a href="https://iitr.ac.in/Departments/Department%20of%20Design/static/MIM/MIM_Structure.pdf" target="_blank" rel="noopener">Master's in Innovation Management</a>
+                              from the IIT Roorkee. I have completed M.Sc. in Mathematics from NIT Warangal. I have a passion for Analytics, Creativity, Design, and Problem-Solving. I had the incredible opportunity to be intern at Patanjali Ayurved Ltd, where I designed a comprehensive dashboard for Sales Analysis and Annual Operating Plan (AOP). During my journey of internship, I have honed my skills in data visualization, data entry, data analysis, designing and project management. I love playing chess and solve puzzles. I have expertise in management, design, mathematics, and data analytics, combining creativity and strategic thinking to drive innovative solutions.
+                           </p>
+                           <a class="btn btn-outline-primary btn-page-header" href="#projects1" rel="noopener">Design</a>
+                           <a class="btn btn-outline-primary btn-page-header" href="#internships" rel="noopener"> Analytics</a>
+                           <a class="btn btn-outline-primary btn-page-header"  href="#projects" rel="noopener"> Research</a>
+                           <a class="btn btn-outline-primary btn-page-header" href="#projects3" rel="noopener"> Mathematics</a>      
+                           <a class="btn btn-outline-primary btn-page-header" href="https://drive.google.com/file/d/1K0RV-FZcgPu3ocsoREehopPIEIsx-0ZK/view?usp=sharing" target="_blank" rel="noopener"> Resume</a>
+                        </div>
+                        <div class="row">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="achievements" class="home-section wg-achievements  " style="background-color:#F8F8F8;">
+            <div class="home-section-bg "></div>
+            <div class="container" >
+               <div class="row  " >
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;">Achievements</h1>
+                  </div>
+                  <div class="col-12 col-lg-8" >
+                     <ul class="fa-ul" >
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span> Currently <b style="font-weight: 700;">Batch Rank 1</b> in course Master in Innovation Management, IIT Roorkee. </span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span><b style="font-weight: 700;">AIR-3</b> and <b style="font-weight: 700;">Platinum Winner</b> in Zuno Fellowship Program by Foundit.</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span><b style="font-weight: 700;">AIR-652</b> in Joint Admission Test for Masters (JAM Mathematics) 2019.</span>
+                        </li>
+                        <li>
+                           <span><b style="font-weight: 700;">AIR-1684</b> in Graduate Aptitude Test (GATE Mathematics) 2021.</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span><b style="font-weight: 700;">Rank 2</b> in District Chess Championship 2012-13.</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Consistently in the <b style="font-weight: 700;">Top 3</b> in all 6 Semesters during B.Sc.</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="certifications" class="home-section wg-certifications  ">
+            <div class="home-section-bg "></div>
+            <div class="container" >
+               <div class="row  " >
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;">Certifications</h1>
+                  </div>
+                  <div class="col-12 col-lg-8" >
+                     <ul class="fa-ul" >
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span> Earned <b style="font-weight: 700;">Google</b> Data Analytics Certification by Google on Coursera in July 2023. <a href="https://drive.google.com/file/d/1YUeOgqx1G7CzPwVl0GwWLrspe7P18zZc/view?usp=drive_link"  target="_blank">Certificate Link</a> </span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span> <b style="font-weight: 700;">Elite with Gold</b> in NPTEL Course Engineering Mathematics of IIT KGP (Topper). <a href="https://drive.google.com/file/d/14pY8YJ17mFA8v3e6EKqL2qW6i1Y0raUh/view?usp=drive_link"  target="_blank">Certificate Link</a> </span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span> <b style="font-weight: 700;">Elite with Silver</b> in NPTEL Course Calculus of Several Real Variables of IIT Kanpur. <a href="https://drive.google.com/file/d/1tGJeM68dR2vY3Oae4yaT2_alik95bbrf/view?usp=drive_link"  target="_blank">Certificate Link</a> </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="internships" class="home-section wg-internships  " style="background-color:#F8F8F8;">
+            <div class="home-section-bg "></div>
+            <div class="container" >
+               <div class="row  " >
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;">Internships</h1>
+                  </div>
+                  <div class="col-12 col-lg-8" >
+                     <h5>Patanjali Ayurved Ltd. (Patanjali Organic Research Institute) June 2023 - Aug 2023</h5>
+                     <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                           <div class="summary-style">
+                              <ul class="fa-ul" >
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify"> Designed and Created a Dashboard of Sales and AOP of Patanjali Organic Research Institute. </p>
+                                 </li>
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify">Performed comprehensive analysis using data analytics techniques of extensive Sales Big Data.</p>
+                                 </li>
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify">Executed end-to-end Data Cleaning and Data Entry processes, encompassing handling missing values, eliminating duplicates, formatting data, validating accuracy, and meticulously identifying and rectifying errors.</p>
+                                 </li>
+                                 <li>
+                                    <p style="text-align:justify"><i><u>Skill set</u>: Designing, Liaising, M.S. Excel, Data cleaning, Data Analysis, Data Entry, Sales Analysis</i></p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-6 order-first ">
+                           <a>
+                           <img src="./myfiles/Patanjali_Internship.jpg" style="height:420px;width:500px" loading="lazy">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="projects" class="home-section wg-projects  ">
+            <div class="home-section-bg "></div>
+            <div class="container" >
+               <div class="row  " >
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;">Projects</h1>
+                  </div>
+                  <div class="col-12 col-lg-8" >
+                     <h5>Case Study of University of Patanjali (<i>Currently Ongoing</i>)</h5>
+                     <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                           <div class="summary-style">
+                              <ul class="fa-ul" >
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify">Interviewed with Pro-Vice Chancellor, Professors, Acharya, Students & Staff of University of Patanjali.</p>
+                                 </li>
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify">Analyzed market problem and how does an organization offer a better solution at global level.</p>
+                                 </li>
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify">Explored Patanjali Research Institute, Patanjali Yogpeeth, University of Patanjali.</p>
+                                 </li>
+                                 <li>
+                                    <p style="text-align:justify"><i><u>Skill set</u>: Marketing, Communication, Decision Making, Critical Thinking, Report Making</i></p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-6 order-first ">
+                           <a>
+                           <img src="./myfiles/CaseStudy.jpg" style="height:250px;width:500px" loading="lazy">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="projects1" class="home-section wg-projects1  " style="background-color:#F8F8F8;">
+            <div class="home-section-bg "></div>
+            <div class="container" >
+               <div class="row  " >
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;"></h1>
+                  </div>
+                  <div class="col-12 col-lg-8" >
+                     <h5>Education: An Explorative Approach towards Informal Education Nov 2022</h5>
+                     <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                           <div class="summary-style">
+                              <ul class="fa-ul" >
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify">Identified a prevalent gap in informal education, specifically in the domain of value education for children. </p>
+                                 </li>
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify"><b style="font-weight: 700;">Interviewed 30+ Rural People</b> to Understand and Empathize their Problems.</p>
+                                 </li>
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify">Developed an Innovative Solution by creating <i>Mulya: Board Game to Inculcate Values</i>, aimed at instilling essential virtues in children through an engaging and interactive gaming experience.</p>
+                                 </li>
+                                 <li>
+                                    <p style="text-align:justify"><i><u>Skill set</u>: Problem Identification, Ideation, Prototyping and Designing, Creativity, Mural, Figma</i></p>
+                                 </li>
+                                 <li>
+                                    <a href="https://drive.google.com/file/d/1nH7jpHHA7KKJmEYk2eJkVa8atEv84Su8/view?usp=drive_link">Report Link</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-6 order-first ">
+                           <a>
+                           <img src="./myfiles/EduProj.jpg" style="height:420px;width:500px" loading="lazy">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="projects2" class="home-section wg-projects2  " >
+            <div class="home-section-bg "></div>
+            <div class="container" >
+               <div class="row  " >
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;"></h1>
+                  </div>
+                  <div class="col-12 col-lg-8" >
+                     <h5>Design Thinking: Design as a Worldmaking Agent - Transition Design Nov 2022</h5>
+                     <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                           <div class="summary-style">
+                              <ul class="fa-ul" >
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify">Optimized a Bizarre solution for Bizarre world and question of Moral Turpitude, to save Country from fraudsters from doing financial frauds. </p>
+                                 </li>
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify"><b style="font-weight: 700;">Interviewed the Indian Army Major</b> to generate innovative ideas for the solution.</p>
+                                 </li>
+                                 <li>
+                                    <p style="text-align:justify"><i><u>Skill set</u>: Problem Identification, Creativity, Ideation, Critical Thinking and Strategy Making</i></p>
+                                 </li>
+                                 <li>
+                                    <a href="https://drive.google.com/file/d/1DyUViw3GWQGSqCwwTSYOs3JQW7BNjpTg/view?usp=drive_link">Report Link</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-6 order-first ">
+                           <a>
+                           <img src="./myfiles/Proj2.jpg" style="height:320px;width:500px" loading="lazy">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="projects3" class="home-section wg-projects3  " style="background-color:#F8F8F8;">
+            <div class="home-section-bg "></div>
+            <div class="container" >
+               <div class="row  " >
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;"></h1>
+                  </div>
+                  <div class="col-12 col-lg-8" >
+                     <h5>Numerical solution of fifth order boundary value Problems May 2021</h5>
+                     <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                           <div class="summary-style">
+                              <ul class="fa-ul" >
+                                 <li>
+                                    <i  aria-hidden="true"></i>
+                                    <p style="text-align:justify"> Used Petrov-Galerkin method with cubic B-splines as Basis functions and Quintic B-splines as Weight function. </p>
+                                 </li>
+                                 <li>
+                                    <p style="text-align:justify"><i><u>Skill set</u>: Fortran, LaTeX</i></p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-6 order-first ">
+                           <a>
+                           <img src="./myfiles/Math.jpg" style="height:200px;width:430px" loading="lazy">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="skills" class="home-section wg-skills  ">
+            <div class="home-section-bg "></div>
+            <div class="container" >
+               <div class="row  " >
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;">Skills</h1>
+                  </div>
+                  <div class="col-12 col-lg-8" >
+                     Python, MySQL, Microsoft Office (M.S.Word, M.S. PowerPoint, M.S. Excel), LaTeX, Data Cleaning, Data Analysis, Data Visualization, Data Entry, Problem-Solving, Analysis and Summarization, Communication, Critical Thinking, Optimization, Leadership
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="extrac" class="home-section wg-extrac  " style="background-color:#F8F8F8;">
+            <div class="home-section-bg "></div>
+            <div class="container" >
+               <div class="row  " >
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;">Extra-Curricular</h1>
+                  </div>
+                  <div class="col-12 col-lg-8" >
+                     <ul class="fa-ul" >
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span> Active <b style="font-weight: 700;">Class Representative</b> of Master in Innovation Management at IIT Roorkee. </span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span><b style="font-weight: 700;">Student Coordinator</b> for 2 days Workshop on Insights on Innovation: Success Stories at IIT Roorkee.</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Active Chess Club Member at IIT Roorkee Chess Club.</span>
+                        </li>
+                        <li>
+                           <span>Hosted an Event for J.M.Patel College, accredited with ‘A’ grade by National Assessment and Accreditation Council.</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Responsible for Game Management and Anchoring during the Farewell event of 200+ students.</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="courses" class="home-section wg-courses  ">
+            <div class="home-section-bg "></div>
+            <div class="container" >
+               <div class="row  " >
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;">Courses Taken</h1>
+                  </div>
+                  <div class="col-12 col-lg-8" >
+                     <ul class="fa-ul" >
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Business Decision Making (Course Topper) </span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Contemporary Management Practices (Course Topper)</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Innovative Entrepreneurship Strategies (Course Topper)</span>
+                        </li>
+                        <li>
+                           <span>Legal Aspects of Business (Course Topper)</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Financing and Marketing of Innovation (Course Topper)</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Technology Management (Course Topper)</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Intellectual Property Management (Course Topper)</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Design Thinking</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Effective Communication Skills</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Business Valuation</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Product Innovation Management</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Process Innovation Management</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Contemporary Strategic Management</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Intellectual Property Management</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Innovative Services and Business Models</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Operation Research∗</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Mathematical Modelling∗</span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Linear Algebra∗</span>
+                        </li>
+                     </ul>
+                     ∗Done during M.Sc. in Mathematics
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="contacts" class="home-section wg-contacts  " style="background-color:#F8F8F8;">
+            <div class="home-section-bg "></div>
+            <div class="container">
+               <div class="row  ">
+                  <div class="section-heading col-12 col-lg-3 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                     <h1 class="mb-0" style="font-size: 46px;">Contact</h1>
+                  </div>
+                  <div class="col-12 col-lg-8">
+                     <ul class="fa-ul">
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>Connect with me on <a href="https://www.linkedin.com/in/aishwaryaasawa/"  target="_blank">LinkedIn</a> </span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span>E-Mail: <a href="mailto:aishwaryaasawa09@gmail.com">aishwaryaasawa09@gmail.com</a></span>
+                        </li>
+                        <li>
+                           <i  aria-hidden="true"></i>
+                           <span >Address: Himadri Bhawan, Indian Institute of Technology Roorkee is a technical university located in Roorkee, Uttarakhand, India, Pin Code: 247667</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
       <script src="./myfiles/jquery.min.js.download" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
       <script src="./myfiles/instantpage.min.js.download" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
-
-        <script src="./myfiles/imagesloaded.pkgd.min.js.download" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-        <script src="./myfiles/isotope.pkgd.min.js.download" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-
-        <script src="./myfiles/jquery.fancybox.min.js.download" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-  <script src="./myfiles/mermaid.min.js.download" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
-  
-        <script src="./myfiles/highlight.min.js.download" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
-        
-        <script src="./myfiles/r.min.js.download"></script>
-        
-        <script src="./myfiles/python.min.js.download"></script>
-        
-        <script src="./myfiles/julia.min.js.download"></script>
+      <script src="./myfiles/imagesloaded.pkgd.min.js.download" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="./myfiles/isotope.pkgd.min.js.download" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="./myfiles/jquery.fancybox.min.js.download" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="./myfiles/mermaid.min.js.download" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      <script src="./myfiles/highlight.min.js.download" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+      <script src="./myfiles/r.min.js.download"></script>
+      <script src="./myfiles/python.min.js.download"></script>
+      <script src="./myfiles/julia.min.js.download"></script>
       <script src="./myfiles/leaflet.min.js.download" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
-        <script src="./myfiles/fuse.min.js.download" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-        <script src="./myfiles/jquery.mark.min.js.download" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-
-    <script src="./myfiles/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js.download"></script>
-    
-    <script src="./myfiles/wowchemy.min.4ea9cc8d09c5c158656ac1a804743b34.js.download"></script>
-    
-  <script async="" defer="" src="./myfiles/buttons.js.download"></script>
-
-
-<iframe id="netlify-identity-widget" title="Netlify identity widget" style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; " src="./myfiles/saved_resource.html"></iframe></body></html>
+      <script src="./myfiles/fuse.min.js.download" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+      <script src="./myfiles/jquery.mark.min.js.download" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      <script src="./myfiles/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js.download"></script>
+      <script src="./myfiles/wowchemy.min.4ea9cc8d09c5c158656ac1a804743b34.js.download"></script>
+      <script async="" defer="" src="./myfiles/buttons.js.download"></script>
+      <iframe id="netlify-identity-widget" title="Netlify identity widget" style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; " src="./myfiles/saved_resource.html"></iframe>
+   </body>
+</html>
